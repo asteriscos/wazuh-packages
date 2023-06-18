@@ -85,6 +85,35 @@ override_dh_install:
 		runuser $(USER) --shell="/bin/bash" --command="$(TARGET_DIR)$(INSTALLATION_DIR)/bin/opensearch-dashboards-plugin install $(URL)" ;\
 	fi
 
+# Optional customizations previous to installing Wazuh plugin
+#	if [ ! -z "$(POST_PLUGIN_INSTALL)" ]; then \
+#		runuser $(USER) --shell="/bin/bash" --command="$(POST_PLUGIN_INSTALL)" --path="$(TARGET_DIR)$(INSTALLATION_DIR)" ;\
+#	fi
+
+### Change LEFT MENU Wazuh name to Nokia
+
+# plugins/wazuh/target/public/wazuh.plugin.js
+#/home/wazuh/Downloads/packages/wazuh.plugin.js
+# sed -i 's|id:"wazuh",title:"Wazuh"|id:"wazuh",title:"Nokia"|g' $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.plugin.js
+# sed -i 's|category:{id:"wazuh",label:"Wazuh"|category:{id:"wazuh",label:"Nokia"|g' $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.plugin.js
+# rm $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.plugin.js.gz
+# rm $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.plugin.js.br
+# gzip -c $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.plugin.js > $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.plugin.js.gz
+# brotli -c $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.plugin.js > $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.plugin.js.br
+
+### Remove Health Check Wazuh name 
+
+# plugins/wazuh/target/public/wazuh.chunk.10.js
+# /home/wazuh/Downloads/packages/wazuh.chunk.10.js
+
+# sed -i 's|Check Wazuh API connection|Check Server API connection|g' $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.chunk.10.js
+# sed -i 's|Check Wazuh API version|Check Server API version|g' $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.chunk.10.js
+# rm $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.chunk.10.js.gz
+# rm $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.chunk.10.js.br
+# gzip -c $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.chunk.10.js > $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.chunk.10.js.gz
+# brotli -c $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.chunk.10.js > $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/target/public/wazuh.chunk.10.js.br
+
+
 	find $(TARGET_DIR)$(INSTALLATION_DIR)/plugins/wazuh/ -exec chown $(USER):$(GROUP) {} \;
 
 # -----------------------------------------------------------------------------

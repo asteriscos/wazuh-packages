@@ -75,28 +75,34 @@ const Template = ({
   }));
 
   const openSearchLogoSpinner = _react.default.createElement("svg", {
-    viewBox:"0 0 1024 200",
-    fill: "none",
+    viewBox: "0 0 384 112",
+    width: "384",
+    height: "112",
     xmlns: "http://www.w3.org/2000/svg"
   },
-  _react.default.createElement("polygon",{points:"204.11 142.81 174.37 46.12 150.88 46.12 121.13 142.81 91.65 46.06 64.64 46.06 107.69 187.04 129.61 187.04 162.63 85 195.5 187.04 217.42 187.04 260.48 46.12 233.6 46.12 204.11 142.81", fill:"black"}),
-  _react.default.createElement("polygon",{points:"451.67 70.52 524.33 70.52 444.36 182.73 444.36 187.04 563.74 187.04 563.74 162.64 487.81 162.64 567.65 50.56 567.65 46.12 451.67 46.12 451.67 70.52", fill:"black"}),
-  _react.default.createElement("path",{d:"M390,61c-12.09-12.61-28.57-19.24-48-19.24-41,0-72,32.22-72,75s30.95,75,72,75c19.35,0,35.84-6.6,48-19.12v16.16h27.58V44.7H390Zm-45.15,104.7c-27.1,0-46.77-20.6-46.77-49s19.67-48.84,46.77-48.84S391.5,88.4,391.5,116.7,371.89,165.68,344.88,165.68Z", fill:"black"}),
-  _react.default.createElement("path",{d:"M696.14,125.88c0,25.29-13.92,39.8-38.18,39.8s-38.32-14.51-38.32-39.8V44.7H592v83.39c0,46.91,35.51,63.56,65.92,63.56s65.77-16.65,65.77-63.56V44.7H696.14Z", fill:"black"}),
-  _react.default.createElement("path",{d:"M883.3,93.62A85.09,85.09,0,0,0,878.86,76a56.88,56.88,0,0,0-9.46-16.64A45.46,45.46,0,0,0,853.3,47q-9.93-4.71-24.54-4.7-19.05,0-32.48,8.22A53,53,0,0,0,782.19,63V8.35h-24.4V187h27.66V113.71q0-12.52,2.8-21.27A37.82,37.82,0,0,1,796,78.35a28.86,28.86,0,0,1,11.42-7.76,39.44,39.44,0,0,1,13.83-2.42c7.47,0,13.55,1.53,18.2,4.57a31.27,31.27,0,0,1,10.82,12,52.22,52.22,0,0,1,5.22,16.12,107.39,107.39,0,0,1,1.38,16.89V187h27.66V108.75A114.2,114.2,0,0,0,883.3,93.62Z", fill:"black"}),
-	_react.default.createElement("circle",{fill:"#3585F9",cx:"937.12",cy:"167.6",r:"22.24"}));
+    _react.default.createElement("defs", {}, _react.default.createElement("clipPath", { id: "clip-Nokia_Logo_384x112px-blue" }, _react.default.createElement("rect", { width: "384", height: "112" },))),
+    _react.default.createElement("g", {
+      id: "Nokia_Logo_384x112px-blue", "data-name": "Nokia Logo 384x112px-blue", "clip-path": "url(#clip-Nokia_Logo_384x112px-blue)"
+    },
+      _react.default.createElement("rect", { width: "384", height: "112", fill: "#e4e4e4" }),
+      _react.default.createElement("path", { id: "Path_2", "data-name": "Path 2", d: "M262.485,2.6V82.963h12.584V2.6ZM128.037,1.229C103.52,1.229,84.5,18.319,84.5,42.783c0,25.566,19.021,41.553,43.537,41.553s43.578-15.987,43.539-41.553c-.036-23.18-19.023-41.553-43.539-41.554m30.976,41.554c0,18.111-13.868,30.113-30.976,30.113s-30.975-12-30.975-30.113C97.061,25,110.93,12.67,128.037,12.67S159.013,25,159.013,42.783M0,0V82.963H12.843V28.137L79.584,85.565v-17.2ZM181.04,42.783l46.7,40.18H246.47L199.7,42.783,246.47,2.6H227.744Zm198.68,40.18H365.877l-10.125-17.8H309.9l-10.125,17.8H285.932L302.7,53.3h46.47L326,12.082,332.826,0h0Z", transform: "translate(2 13)", fill: "#005aff" }),
+      _react.default.createElement("rect", { id: "Rectangle_6", "data-name": "Rectangle 6", width: "302.058", height: "68.064", transform: "translate(1 2)", fill: "none" }),
+    ),);
 
   const openSearchLogoSpinnerDark = _react.default.createElement("svg", {
-    viewBox:"0 0 1024 200",
-    fill: "none",
+    viewBox: "0 0 384 112",
+    width: "384",
+    height: "112",
     xmlns: "http://www.w3.org/2000/svg"
   },
-  _react.default.createElement("polygon",{points:"204.11 142.81 174.37 46.12 150.88 46.12 121.13 142.81 91.65 46.06 64.64 46.06 107.69 187.04 129.61 187.04 162.63 85 195.5 187.04 217.42 187.04 260.48 46.12 233.6 46.12 204.11 142.81", fill:"white"}),
-  _react.default.createElement("polygon",{points:"451.67 70.52 524.33 70.52 444.36 182.73 444.36 187.04 563.74 187.04 563.74 162.64 487.81 162.64 567.65 50.56 567.65 46.12 451.67 46.12 451.67 70.52", fill:"white"}),
-  _react.default.createElement("path",{d:"M390,61c-12.09-12.61-28.57-19.24-48-19.24-41,0-72,32.22-72,75s30.95,75,72,75c19.35,0,35.84-6.6,48-19.12v16.16h27.58V44.7H390Zm-45.15,104.7c-27.1,0-46.77-20.6-46.77-49s19.67-48.84,46.77-48.84S391.5,88.4,391.5,116.7,371.89,165.68,344.88,165.68Z", fill:"white"}),
-  _react.default.createElement("path",{d:"M696.14,125.88c0,25.29-13.92,39.8-38.18,39.8s-38.32-14.51-38.32-39.8V44.7H592v83.39c0,46.91,35.51,63.56,65.92,63.56s65.77-16.65,65.77-63.56V44.7H696.14Z", fill:"white"}),
-  _react.default.createElement("path",{d:"M883.3,93.62A85.09,85.09,0,0,0,878.86,76a56.88,56.88,0,0,0-9.46-16.64A45.46,45.46,0,0,0,853.3,47q-9.93-4.71-24.54-4.7-19.05,0-32.48,8.22A53,53,0,0,0,782.19,63V8.35h-24.4V187h27.66V113.71q0-12.52,2.8-21.27A37.82,37.82,0,0,1,796,78.35a28.86,28.86,0,0,1,11.42-7.76,39.44,39.44,0,0,1,13.83-2.42c7.47,0,13.55,1.53,18.2,4.57a31.27,31.27,0,0,1,10.82,12,52.22,52.22,0,0,1,5.22,16.12,107.39,107.39,0,0,1,1.38,16.89V187h27.66V108.75A114.2,114.2,0,0,0,883.3,93.62Z", fill:"white"}),
-  _react.default.createElement("circle",{fill:"#3585F9",cx:"937.12",cy:"167.6",r:"22.24"}));
+    _react.default.createElement("defs", {}, _react.default.createElement("clipPath", { id: "clip-Nokia_Logo_384x112px-white" }, _react.default.createElement("rect", { width: "384", height: "112" },))),
+    _react.default.createElement("g", {
+      id: "Nokia_Logo_384x112px-white", "data-name": "Nokia Logo 384x112px-white", "clip-path": "url(#clip-Nokia_Logo_384x112px-white)"
+    },
+      _react.default.createElement("rect", { width: "384", height: "112", fill: "#e4e4e4" }),
+      _react.default.createElement("path", { id: "Path_2", "data-name": "Path 2", d: "M262.485,2.6V82.963h12.584V2.6ZM128.037,1.229C103.52,1.229,84.5,18.319,84.5,42.783c0,25.566,19.021,41.553,43.537,41.553s43.578-15.987,43.539-41.553c-.036-23.18-19.023-41.553-43.539-41.554m30.976,41.554c0,18.111-13.868,30.113-30.976,30.113s-30.975-12-30.975-30.113C97.061,25,110.93,12.67,128.037,12.67S159.013,25,159.013,42.783M0,0V82.963H12.843V28.137L79.584,85.565v-17.2ZM181.04,42.783l46.7,40.18H246.47L199.7,42.783,246.47,2.6H227.744Zm198.68,40.18H365.877l-10.125-17.8H309.9l-10.125,17.8H285.932L302.7,53.3h46.47L326,12.082,332.826,0h0Z", transform: "translate(2 13)", fill: "#fff" }),
+      _react.default.createElement("rect", { id: "Rectangle_6", "data-name": "Rectangle 6", width: "302.058", height: "68.064", transform: "translate(1 2)", fill: "none" }),
+    ),);
 
 
   const loadingLogoDefault = (_injectedMetadata$bra = injectedMetadata.branding.loadingLogo) === null || _injectedMetadata$bra === void 0 ? void 0 : _injectedMetadata$bra.defaultUrl;

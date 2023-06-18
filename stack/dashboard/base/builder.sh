@@ -146,6 +146,36 @@ brotli -c ./plugins/securityDashboards/target/public/securityDashboards.plugin.j
 # Generate compressed files
 gzip -c ./plugins/securityDashboards/target/public/securityDashboards.chunk.5.js > ./plugins/securityDashboards/target/public/securityDashboards.chunk.5.js.gz
 brotli -c ./plugins/securityDashboards/target/public/securityDashboards.chunk.5.js > ./plugins/securityDashboards/target/public/securityDashboards.chunk.5.js.br
+
+#Optional customizations previous to installing Wazuh plugin
+# if [ "${pre_plugin_install}" ];then
+#     ${pre_plugin_install}
+# fi
+
+
+### Change title name to Nokia
+
+
+sed -i "s|defaultValue: 'Wazuh'|defaultValue: \'Nokia\'|g" ./src/core/server/opensearch_dashboards_config.js
+
+
+### Hide help menu links
+
+
+# <!-- this can be replaced by the next match -->
+sed -i 's|.app-wrapper-panel > * {\n    flex-shrink: 0; }|.app-wrapper-panel > * {\n    flex-shrink: 0; }\n\nbody > div div div div div.euiPopoverTitle + div[style=\"max-width: 270px;\"]{ display: none; }|g' ./src/core/target/public/core.entry.js
+
+
+sed -i 's|"data-test-subj":"helpMenuButton",id:"headerHelpMenu",isOpen:this.state.isOpen,ownFocus:true,repositionOnScroll:true},external_osdSharedDeps_React_default.a.createElement(external_osdSharedDeps_ElasticEui_["EuiPopoverTitle"],null,|"data-test-subj":"helpMenuButton",id:"headerHelpMenu",isOpen:this.state.isOpen,ownFocus:true,repositionOnScroll:true},external_osdSharedDeps_React_default.a.createElement(external_osdSharedDeps_ElasticEui_["EuiPopoverTitle"],{style:{borderBottom: 0,paddingBottom: 0}},|g' ./src/core/target/public/core.entry.js
+
+# Build the compressed files
+# rm -f ./src/core/target/public/core.entry.js.gz
+# rm -f ./src/core/target/public/core.entry.js.br
+
+gzip -c ./src/core/target/public/core.entry.js > ./src/core/target/public/core.entry.js.gz
+brotli -c ./src/core/target/public/core.entry.js > ./src/core/target/public/core.entry.js.br
+
+
 # Add VERSION file
 cp /root/VERSION .
 # Add exception for wazuh plugin install
