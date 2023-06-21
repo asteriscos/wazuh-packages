@@ -25,8 +25,8 @@ sed -i 's|Wazuh API seems to be down|Server API seems to be down|g' ./opensearch
 sed -i 's|Check the Wazuh API service status|Check the server API service status|g' ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js
 
 ### Change tab title and breadcrumb name
-sed -i 's|chrome.docTitle.change("Wazuh".concat(pageTitleSuffix));|chrome.docTitle.change("Dashboards".concat(pageTitleSuffix));|g' ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js
-sed -i 's|"discover.discoverBreadcrumbTitle",{defaultMessage:"Wazuh"}|"discover.discoverBreadcrumbTitle",{defaultMessage:"Dashboards"}|g' ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js
+sed -i 's|chrome\.docTitle\.change("Wazuh"\.concat(pageTitleSuffix));|chrome.docTitle.change("Dashboards".concat(pageTitleSuffix));|g' ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js
+sed -i 's|"discover\.discoverBreadcrumbTitle",{defaultMessage:"Wazuh"}|"discover.discoverBreadcrumbTitle",{defaultMessage:"Dashboards"}|g' ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js
 
 gzip -c ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js > ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js.gz
 brotli -c ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js > ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js.br
@@ -39,4 +39,4 @@ brotli -c ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js > ./open
 # " server can reach the configured Wazuh API"
 # " Already configured Wazuh API(s)"
 
-zip -r nokia-custom-wazuh-4.4.3-1.zip ./opensearch-dashboards
+zip -r ./packages/nokia-custom-wazuh-4.4.3-1.zip ./opensearch-dashboards

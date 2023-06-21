@@ -66,7 +66,7 @@ build_deb() {
     fi
 
     # Build the Debian package with a Docker container
-    volumes="-v ${outdir}/:/tmp:Z -v /home/wazuh/Downloads/packages/WZD-PROD-4.4.3/:/tmp/packages:Z"
+    volumes="-v ${outdir}/:/tmp:Z -v ${current_path}/../plugin/packages/:/tmp/packages:Z"
     if [ "${reference}" ];then
         docker run -t --rm ${volumes} \
             ${container_name} ${architecture} ${revision} \

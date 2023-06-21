@@ -163,10 +163,10 @@ sed -i "s|defaultValue: 'Wazuh'|defaultValue: \'Nokia\'|g" ./src/core/server/ope
 
 
 # <!-- this can be replaced by the next match -->
-sed -i 's|.app-wrapper-panel > * {\n    flex-shrink: 0; }|.app-wrapper-panel > * {\n    flex-shrink: 0; }\n\nbody > div div div div div.euiPopoverTitle + div[style=\"max-width: 270px;\"]{ display: none; }|g' ./src/core/target/public/core.entry.js
+sed -i 's|\.app-wrapper-panel > \* {\\n    flex-shrink: 0; }|.app-wrapper-panel > * {\\n    flex-shrink: 0; }\\n\\nbody > div div div div div.euiPopoverTitle + div[style=\\"max-width: 270px;\\"]{ display: none; }|g' ./src/core/target/public/core.entry.js
 
 
-sed -i 's|"data-test-subj":"helpMenuButton",id:"headerHelpMenu",isOpen:this.state.isOpen,ownFocus:true,repositionOnScroll:true},external_osdSharedDeps_React_default.a.createElement(external_osdSharedDeps_ElasticEui_["EuiPopoverTitle"],null,|"data-test-subj":"helpMenuButton",id:"headerHelpMenu",isOpen:this.state.isOpen,ownFocus:true,repositionOnScroll:true},external_osdSharedDeps_React_default.a.createElement(external_osdSharedDeps_ElasticEui_["EuiPopoverTitle"],{style:{borderBottom: 0,paddingBottom: 0}},|g' ./src/core/target/public/core.entry.js
+sed -i 's|"data-test-subj":"helpMenuButton",id:"headerHelpMenu",isOpen:this\.state\.isOpen,ownFocus:true,repositionOnScroll:true},external_osdSharedDeps_React_default\.a\.createElement(external_osdSharedDeps_ElasticEui_\["EuiPopoverTitle"\],null,|"data-test-subj":"helpMenuButton",id:"headerHelpMenu",isOpen:this.state.isOpen,ownFocus:true,repositionOnScroll:true},external_osdSharedDeps_React_default.a.createElement(external_osdSharedDeps_ElasticEui_["EuiPopoverTitle"],{style:{borderBottom: 0,paddingBottom: 0}},|g' ./src/core/target/public/core.entry.js
 
 # Build the compressed files
 # rm -f ./src/core/target/public/core.entry.js.gz

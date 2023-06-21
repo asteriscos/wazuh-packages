@@ -54,12 +54,12 @@ build() {
 
     if [ "${reference}" ];then
         docker run -t --rm -v ${outdir}/:/tmp/output:Z \
-            -v /home/wazuh/Downloads/packages/WZD-PROD-4.4.3/:/tmp/packages:Z \
+            -v ${current_path}/../plugin/packages/:/tmp/packages:Z \
             ${container_name} ${architecture} ${revision} ${future} ${url} ${reference} ${pre_plugin_install} ${post_plugin_install} || return 1
     else
         docker run -t --rm -v ${outdir}/:/tmp/output:Z \
             -v ${current_path}/../../..:/root:Z \
-            -v /home/wazuh/Downloads/packages/WZD-PROD-4.4.3/:/tmp/packages:Z \
+            -v ${current_path}/../plugin/packages/:/tmp/packages:Z \
             ${container_name} ${architecture} ${revision} ${future} ${url} ${pre_plugin_install} ${post_plugin_install} || return 1
     fi
 
