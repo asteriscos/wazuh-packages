@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 700 700">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="700" viewBox="0 0 700 700">
   <defs>
-    <clipPath id="clip-Favicon_700x700px-blue">
+    <clipPath id="clip-Favicon_700x700px-white">
       <rect width="700" height="700"/>
     </clipPath>
   </defs>
-  <g id="Favicon_700x700px-blue" data-name="Favicon 700x700px-blue" clip-path="url(#clip-Favicon_700x700px-blue)">
-    <rect width="700" height="700" fill="#fff"/>
-    <rect id="Rectangle_2" data-name="Rectangle 2" width="700" height="700" fill="#005aff"/>
+  <g id="Favicon_700x700px-white" data-name="Favicon 700x700px-white" clip-path="url(#clip-Favicon_700x700px-white)">
+    <rect width="700" height="700" fill="transparent"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="700" height="700" fill="transparent"/>
     <g id="Group_1" data-name="Group 1">
       <rect id="Rectangle_5" data-name="Rectangle 5" width="700" height="700" fill="none"/>
       <path id="N" d="M0,0V700.835H108.3V237.258L700.834,700.835V564.4Z" fill="#fff"/>

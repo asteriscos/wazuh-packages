@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="305" height="73" viewBox="0 0 305 73">
+  <defs>
+    <clipPath id="clip-Nokia_Logo_305x73px-blue">
+      <rect width="305" height="73"/>
+    </clipPath>
+  </defs>
+  <g id="Nokia_Logo_305x73px-blue" data-name="Nokia Logo 305x73px-blue" clip-path="url(#clip-Nokia_Logo_305x73px-blue)">
+    <path id="Path_2" data-name="Path 2" d="M208.8,2.07V66h10.01V2.07ZM101.85.978c-19.5,0-34.633,13.594-34.633,33.055,0,20.337,15.131,33.054,34.633,33.054s34.665-12.717,34.634-33.054C136.455,15.594,121.352.979,101.85.978m24.641,33.055c0,14.407-11.032,23.954-24.641,23.954S77.21,48.44,77.21,34.033c0-14.146,11.032-23.954,24.64-23.954s24.641,9.808,24.641,23.954M0,0V66H10.216V22.382L63.307,68.065V54.382ZM144.013,34.033,181.165,66h14.9L158.854,34.033,196.061,2.07h-14.9ZM302.058,66H291.046l-8.054-14.156H246.518L238.464,66H227.452L240.789,42.4h36.966L259.323,9.611,264.755,0h0Z" transform="translate(1 2)" fill="#005aff"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="302.058" height="68.064" transform="translate(1 2)" fill="none"/>
+  </g>
+</svg>

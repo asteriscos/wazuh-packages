@@ -84,7 +84,7 @@ const Template = ({
     _react.default.createElement("g", {
       id: "Nokia_Logo_384x112px-blue", "data-name": "Nokia Logo 384x112px-blue", "clip-path": "url(#clip-Nokia_Logo_384x112px-blue)"
     },
-      _react.default.createElement("rect", { width: "384", height: "112", fill: "#e4e4e4" }),
+      // _react.default.createElement("rect", { width: "384", height: "112", fill: "transparent" }),
       _react.default.createElement("path", { id: "Path_2", "data-name": "Path 2", d: "M262.485,2.6V82.963h12.584V2.6ZM128.037,1.229C103.52,1.229,84.5,18.319,84.5,42.783c0,25.566,19.021,41.553,43.537,41.553s43.578-15.987,43.539-41.553c-.036-23.18-19.023-41.553-43.539-41.554m30.976,41.554c0,18.111-13.868,30.113-30.976,30.113s-30.975-12-30.975-30.113C97.061,25,110.93,12.67,128.037,12.67S159.013,25,159.013,42.783M0,0V82.963H12.843V28.137L79.584,85.565v-17.2ZM181.04,42.783l46.7,40.18H246.47L199.7,42.783,246.47,2.6H227.744Zm198.68,40.18H365.877l-10.125-17.8H309.9l-10.125,17.8H285.932L302.7,53.3h46.47L326,12.082,332.826,0h0Z", transform: "translate(2 13)", fill: "#005aff" }),
       _react.default.createElement("rect", { id: "Rectangle_6", "data-name": "Rectangle 6", width: "302.058", height: "68.064", transform: "translate(1 2)", fill: "none" }),
     ),);
@@ -99,7 +99,7 @@ const Template = ({
     _react.default.createElement("g", {
       id: "Nokia_Logo_384x112px-white", "data-name": "Nokia Logo 384x112px-white", "clip-path": "url(#clip-Nokia_Logo_384x112px-white)"
     },
-      _react.default.createElement("rect", { width: "384", height: "112", fill: "#e4e4e4" }),
+      // _react.default.createElement("rect", { width: "384", height: "112", fill: "transparent" }),
       _react.default.createElement("path", { id: "Path_2", "data-name": "Path 2", d: "M262.485,2.6V82.963h12.584V2.6ZM128.037,1.229C103.52,1.229,84.5,18.319,84.5,42.783c0,25.566,19.021,41.553,43.537,41.553s43.578-15.987,43.539-41.553c-.036-23.18-19.023-41.553-43.539-41.554m30.976,41.554c0,18.111-13.868,30.113-30.976,30.113s-30.975-12-30.975-30.113C97.061,25,110.93,12.67,128.037,12.67S159.013,25,159.013,42.783M0,0V82.963H12.843V28.137L79.584,85.565v-17.2ZM181.04,42.783l46.7,40.18H246.47L199.7,42.783,246.47,2.6H227.744Zm198.68,40.18H365.877l-10.125-17.8H309.9l-10.125,17.8H285.932L302.7,53.3h46.47L326,12.082,332.826,0h0Z", transform: "translate(2 13)", fill: "#fff" }),
       _react.default.createElement("rect", { id: "Rectangle_6", "data-name": "Rectangle 6", width: "302.058", height: "68.064", transform: "translate(1 2)", fill: "none" }),
     ),);
