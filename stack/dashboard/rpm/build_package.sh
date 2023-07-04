@@ -66,7 +66,7 @@ build_rpm() {
     fi
 
     # Build the RPM package with a Docker container
-    volumes="-v ${outdir}/:/tmp:Z"
+    volumes="-v ${outdir}/:/tmp:Z -v ${current_path}/../plugin/packages/:/tmp/packages:Z"
     if [ "${reference}" ];then
         docker run -t --rm ${volumes} \
             ${container_name} ${architecture} ${revision} \

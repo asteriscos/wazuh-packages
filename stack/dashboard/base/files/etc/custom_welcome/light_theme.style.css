@@ -4306,6 +4306,15 @@ input:focus {
   font-weight: 300;
 }
 
+#opensearch-dashboards-body > div > div.app-wrapper.hidden-chrome > div > div.application > div > ul.login-wrapper > div.euiText.euiText--medium > div {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #333 !important;
+  font-size: 16px !important;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
 #opensearch-dashboards-body > div > div.app-wrapper.hidden-chrome > div > div.application > div > ul > div.euiText.euiText--small > div {
   text-align: center;
   padding-bottom: 15px;
