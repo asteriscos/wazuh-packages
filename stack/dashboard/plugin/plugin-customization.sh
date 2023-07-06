@@ -28,6 +28,9 @@ sed -i 's|Check the Wazuh API service status|Check the server API service status
 sed -i 's|chrome\.docTitle\.change("Wazuh"\.concat(pageTitleSuffix));|chrome.docTitle.change("Dashboards".concat(pageTitleSuffix));|g' ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js
 sed -i 's|"discover\.discoverBreadcrumbTitle",{defaultMessage:"Wazuh"}|"discover.discoverBreadcrumbTitle",{defaultMessage:"Dashboards"}|g' ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js
 
+### Change Wazuh API title in Settings section
+sed -i 's|Wazuh API configuration|Server API configuration|g' ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js
+
 gzip -c ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js > ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js.gz
 brotli -c ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js > ./opensearch-dashboards/wazuh/target/public/wazuh.chunk.10.js.br
 

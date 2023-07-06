@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-Favicon_32x32px-white">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="Favicon_32x32px-white" data-name="Favicon 32x32px-white" clip-path="url(#clip-Favicon_32x32px-white)">
+    <rect width="32" height="32" fill="transparent"/>
+    <g id="Group_4" data-name="Group 4">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="32" height="32" fill="transparent"/>
+      <g id="Group_1" data-name="Group 1">
+        <rect id="Rectangle_5" data-name="Rectangle 5" width="32" height="32" fill="none"/>
+        <path id="N" d="M0,0V32H4.945V10.833L32,32V25.77Z" fill="#005aff"/>
+      </g>
+    </g>
+  </g>
+</svg>

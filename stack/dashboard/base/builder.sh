@@ -147,31 +147,20 @@ brotli -c ./plugins/securityDashboards/target/public/securityDashboards.plugin.j
 gzip -c ./plugins/securityDashboards/target/public/securityDashboards.chunk.5.js > ./plugins/securityDashboards/target/public/securityDashboards.chunk.5.js.gz
 brotli -c ./plugins/securityDashboards/target/public/securityDashboards.chunk.5.js > ./plugins/securityDashboards/target/public/securityDashboards.chunk.5.js.br
 
-#Optional customizations previous to installing Wazuh plugin
-# if [ "${pre_plugin_install}" ];then
-#     ${pre_plugin_install}
-# fi
-
+# Nokia customizations previous to installing Wazuh plugin
 
 ### Change title name to Nokia
-
-
 sed -i "s|defaultValue: 'Wazuh'|defaultValue: \'Nokia\'|g" ./src/core/server/opensearch_dashboards_config.js
 
-
 ### Hide help menu links
-
-
 # <!-- this can be replaced by the next match -->
 sed -i 's|\.app-wrapper-panel > \* {\\n    flex-shrink: 0; }|.app-wrapper-panel > * {\\n    flex-shrink: 0; }\\n\\nbody > div div div div div.euiPopoverTitle + div[style=\\"max-width: 270px;\\"]{ display: none; }|g' ./src/core/target/public/core.entry.js
-
-
 sed -i 's|"data-test-subj":"helpMenuButton",id:"headerHelpMenu",isOpen:this\.state\.isOpen,ownFocus:true,repositionOnScroll:true},external_osdSharedDeps_React_default\.a\.createElement(external_osdSharedDeps_ElasticEui_\["EuiPopoverTitle"\],null,|"data-test-subj":"helpMenuButton",id:"headerHelpMenu",isOpen:this.state.isOpen,ownFocus:true,repositionOnScroll:true},external_osdSharedDeps_React_default.a.createElement(external_osdSharedDeps_ElasticEui_["EuiPopoverTitle"],{style:{borderBottom: 0,paddingBottom: 0}},|g' ./src/core/target/public/core.entry.js
 
-# Build the compressed files
-# rm -f ./src/core/target/public/core.entry.js.gz
-# rm -f ./src/core/target/public/core.entry.js.br
+### Hide help menu "Help" word
+sed -i 's|external_osdSharedDeps_React_default\.a\.createElement(external_osdSharedDeps_ElasticEui_\["EuiFlexItem"\],null,external_osdSharedDeps_React_default\.a\.createElement("h2",null,external_osdSharedDeps_React_default.a.createElement(external_osdSharedDeps_OsdI18nReact_\["FormattedMessage"\],{id:"core\.ui\.chrome\.headerGlobalNav\.helpMenuTitle",defaultMessage:"Help"})))|null|' ./src/core/target/public/core.entry.js
 
+# Build the compressed files
 gzip -c ./src/core/target/public/core.entry.js > ./src/core/target/public/core.entry.js.gz
 brotli -c ./src/core/target/public/core.entry.js > ./src/core/target/public/core.entry.js.br
 
